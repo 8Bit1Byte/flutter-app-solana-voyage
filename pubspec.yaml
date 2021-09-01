@@ -1,0 +1,54 @@
+name: cryptocurrency_app
+description: A new Flutter project.
+
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^9.1.0
+  cupertino_icons: ^1.0.0
+  hooks_riverpod: 1.0.0-dev.6
+  flutter_riverpod: 1.0.0-dev.6
+  dio: ^4.0.0
+  flutter_dotenv: ^5.0.0
+  fl_chart: ^0.36.1
+  settings_ui: ^1.0.0
+  auto_size_text: ^3.0.0-nullsafety.0
+  flutter_secure_storage: ^4.1.0
+  easy_localization: ^3.0.0
+  freezed_annotation:
+  flutter_candlesticks:
+    git: https://github.com/salvadordeveloper/flutter-candlesticks.git
+  mockito: ^5.0.9
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  http_mock_adapter: ^0.3.2
+  build_runner:
+  freezed:
+  json_serializable:
+  solana: ^0.9.0+1
+  bip39: ^1.0.6
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/translations/
+    - .env
+    - assets/images/
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand-Regular.ttf
+        - asset: assets/fonts/Quicksand-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Quicksand-Light.ttf
+          weight: 100
