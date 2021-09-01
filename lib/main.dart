@@ -38,7 +38,6 @@ class MyApp extends HookConsumerWidget {
         onGenerateRoute: RouteGenerator.generateRoute,
         locale: context.locale,
         home: SplashScreen(),
-        // home: SignInOut(),
         themeMode: themeMode,
         theme: AppTheme.light,
         darkTheme: AppTheme.dark);
