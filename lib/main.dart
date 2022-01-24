@@ -30,7 +30,9 @@ class MyApp extends HookConsumerWidget {
     final themeMode = settings.maybeWhen(
         data: (data) => Utils.getThemeMode(data.themeMode),
         orElse: () => ThemeMode.system);
-
+     
+    final test = ref.watch(cryptoSettings);
+    
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         localizationsDelegates: context.localizationDelegates,
